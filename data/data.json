@@ -1,0 +1,607 @@
+{
+  "workspace": {
+    "name": "NEXORA Engineering Cloud",
+    "version": "2.4.0",
+    "lastUpdated": "2026-09-26T11:00:00Z"
+  },
+  "projects": [
+    {
+      "id": "PRJ-101",
+      "name": "Cloud Infrastructure Migration",
+      "category": "Infrastructure",
+      "owner": "Alex Rivera",
+      "status": "Active",
+      "progress": 82,
+      "priority": "High",
+      "deadline": "2026-10-15",
+      "teamSize": 4,
+      "description": "Migrating monolithic backend microservices to a managed Kubernetes cluster on US-East."
+    },
+    {
+      "id": "PRJ-102",
+      "name": "Security Compliance Audit (SOC2)",
+      "category": "Security",
+      "owner": "Marcus Vance",
+      "status": "Completed",
+      "progress": 100,
+      "priority": "High",
+      "deadline": "2026-09-20",
+      "teamSize": 3,
+      "description": "Penetration testing, encryption-at-rest verification, and SOC2 Type II compliance audit."
+    },
+    {
+      "id": "PRJ-103",
+      "name": "Payment Gateway API Integration",
+      "category": "Backend",
+      "owner": "Jordan Chen",
+      "status": "At Risk",
+      "progress": 45,
+      "priority": "High",
+      "deadline": "2026-10-05",
+      "teamSize": 5,
+      "description": "Multi-currency checkout webhook processing and idempotent transaction safeguards."
+    },
+    {
+      "id": "PRJ-104",
+      "name": "Design System 2.0 Tokens",
+      "category": "Design",
+      "owner": "Elena Rostova",
+      "status": "On Hold",
+      "progress": 65,
+      "priority": "Medium",
+      "deadline": "2026-11-01",
+      "teamSize": 2,
+      "description": "Establishing cross-platform design tokens, semantic contrast variables, and atomic components."
+    },
+    {
+      "id": "PRJ-105",
+      "name": "DevOps Automated CI/CD Pipeline",
+      "category": "DevOps",
+      "owner": "Maya Patel",
+      "status": "Active",
+      "progress": 74,
+      "priority": "Medium",
+      "deadline": "2026-10-25",
+      "teamSize": 3,
+      "description": "Automating container builds, regression test gating, and zero-downtime blue/green rollouts."
+    },
+    {
+      "id": "PRJ-106",
+      "name": "Search & Indexing Engine Optimization",
+      "category": "Backend",
+      "owner": "Liam Tanaka",
+      "status": "Active",
+      "progress": 58,
+      "priority": "Low",
+      "deadline": "2026-11-15",
+      "teamSize": 2,
+      "description": "Vector similarity lookup indexing and full-text search latency reduction under 20ms."
+    },
+    {
+      "id": "PRJ-107",
+      "name": "Client Portal UX Redesign",
+      "category": "Frontend",
+      "owner": "Sarah Jenkins",
+      "status": "Active",
+      "progress": 90,
+      "priority": "High",
+      "deadline": "2026-10-10",
+      "teamSize": 4,
+      "description": "Refactoring client dashboard to Vanilla JS with WCAG 2.1 AA keyboard accessibility."
+    },
+    {
+      "id": "PRJ-108",
+      "name": "Real-time Telemetry Service",
+      "category": "Infrastructure",
+      "owner": "Devon Miller",
+      "status": "At Risk",
+      "progress": 35,
+      "priority": "High",
+      "deadline": "2026-10-18",
+      "teamSize": 3,
+      "description": "Streaming system metrics aggregation via WebSockets and time-series rollups."
+    },
+    {
+      "id": "PRJ-109",
+      "name": "Documentation Portal Refactor",
+      "category": "Frontend",
+      "owner": "Elena Rostova",
+      "status": "Completed",
+      "progress": 100,
+      "priority": "Low",
+      "deadline": "2026-09-15",
+      "teamSize": 2,
+      "description": "Publishing updated API endpoint specifications, code examples, and interactive playground."
+    },
+    {
+      "id": "PRJ-110",
+      "name": "Billing & Invoice Automation",
+      "category": "Backend",
+      "owner": "Jordan Chen",
+      "status": "Active",
+      "progress": 68,
+      "priority": "Medium",
+      "deadline": "2026-11-05",
+      "teamSize": 3,
+      "description": "Automated monthly recurring invoice generation, PDF exports, and tax calculation logic."
+    },
+    {
+      "id": "PRJ-111",
+      "name": "Mobile Web View Optimization",
+      "category": "Frontend",
+      "owner": "Sarah Jenkins",
+      "status": "On Hold",
+      "progress": 50,
+      "priority": "Low",
+      "deadline": "2026-11-30",
+      "teamSize": 2,
+      "description": "Touch gesture tuning and viewport adaptation across compact mobile displays."
+    },
+    {
+      "id": "PRJ-112",
+      "name": "Database Sharding & Replication",
+      "category": "Infrastructure",
+      "owner": "Alex Rivera",
+      "status": "Active",
+      "progress": 40,
+      "priority": "High",
+      "deadline": "2026-11-20",
+      "teamSize": 4,
+      "description": "Partitioning multi-tenant databases across distributed replica clusters for high availability."
+    }
+  ],
+  "team": [
+    {
+      "id": "TM-01",
+      "name": "Alex Rivera",
+      "role": "Principal Systems Architect",
+      "project": "Cloud Infrastructure Migration",
+      "status": "Active",
+      "taskCount": 8,
+      "initials": "AR"
+    },
+    {
+      "id": "TM-02",
+      "name": "Maya Patel",
+      "role": "Lead DevOps Engineer",
+      "project": "DevOps Automated CI/CD Pipeline",
+      "status": "Active",
+      "taskCount": 6,
+      "initials": "MP"
+    },
+    {
+      "id": "TM-03",
+      "name": "Jordan Chen",
+      "role": "Senior Backend Engineer",
+      "project": "Payment Gateway API Integration",
+      "status": "Active",
+      "taskCount": 7,
+      "initials": "JC"
+    },
+    {
+      "id": "TM-04",
+      "name": "Elena Rostova",
+      "role": "Lead UI/UX Designer & Engineer",
+      "project": "Design System 2.0 Tokens",
+      "status": "Away",
+      "taskCount": 4,
+      "initials": "ER"
+    },
+    {
+      "id": "TM-05",
+      "name": "Marcus Vance",
+      "role": "Information Security Specialist",
+      "project": "Security Compliance Audit (SOC2)",
+      "status": "Active",
+      "taskCount": 5,
+      "initials": "MV"
+    },
+    {
+      "id": "TM-06",
+      "name": "Sarah Jenkins",
+      "role": "Senior Frontend Developer",
+      "project": "Client Portal UX Redesign",
+      "status": "Active",
+      "taskCount": 6,
+      "initials": "SJ"
+    },
+    {
+      "id": "TM-07",
+      "name": "Liam Tanaka",
+      "role": "Data Systems Engineer",
+      "project": "Search & Indexing Engine Optimization",
+      "status": "Active",
+      "taskCount": 4,
+      "initials": "LT"
+    },
+    {
+      "id": "TM-08",
+      "name": "Devon Miller",
+      "role": "Site Reliability Engineer",
+      "project": "Real-time Telemetry Service",
+      "status": "Active",
+      "taskCount": 5,
+      "initials": "DM"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TSK-01",
+      "projectId": "PRJ-101",
+      "title": "Configure production Kubernetes ingress controllers",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Alex Rivera",
+      "deadline": "2026-10-15"
+    },
+    {
+      "id": "TSK-02",
+      "projectId": "PRJ-101",
+      "title": "Provision stateful Redis cluster on private VPC",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Alex Rivera",
+      "deadline": "2026-10-15"
+    },
+    {
+      "id": "TSK-03",
+      "projectId": "PRJ-101",
+      "title": "Implement automated secret rotation via Vault",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "Alex Rivera",
+      "deadline": "2026-10-15"
+    },
+    {
+      "id": "TSK-04",
+      "projectId": "PRJ-101",
+      "title": "Simulate failover and verify DNS propagation",
+      "status": "Pending",
+      "priority": "High",
+      "assignee": "Alex Rivera",
+      "deadline": "2026-10-15"
+    },
+    {
+      "id": "TSK-05",
+      "projectId": "PRJ-102",
+      "title": "Perform quarterly third-party penetration testing",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Marcus Vance",
+      "deadline": "2026-09-20"
+    },
+    {
+      "id": "TSK-06",
+      "projectId": "PRJ-102",
+      "title": "Audit TLS 1.3 certificate renegotiation settings",
+      "status": "Completed",
+      "priority": "Medium",
+      "assignee": "Marcus Vance",
+      "deadline": "2026-09-20"
+    },
+    {
+      "id": "TSK-07",
+      "projectId": "PRJ-102",
+      "title": "Review employee MFA policies and admin access logs",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Marcus Vance",
+      "deadline": "2026-09-20"
+    },
+    {
+      "id": "TSK-08",
+      "projectId": "PRJ-103",
+      "title": "Integrate Stripe webhook event signature verification",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Jordan Chen",
+      "deadline": "2026-10-05"
+    },
+    {
+      "id": "TSK-09",
+      "projectId": "PRJ-103",
+      "title": "Build idempotent payment retry queue with exponential backoff",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "Jordan Chen",
+      "deadline": "2026-10-05"
+    },
+    {
+      "id": "TSK-10",
+      "projectId": "PRJ-103",
+      "title": "Resolve currency rounding discrepancies on EUR settlements",
+      "status": "Pending",
+      "priority": "High",
+      "assignee": "Jordan Chen",
+      "deadline": "2026-10-05"
+    },
+    {
+      "id": "TSK-11",
+      "projectId": "PRJ-104",
+      "title": "Export semantic JSON token schema for web and mobile",
+      "status": "Completed",
+      "priority": "Medium",
+      "assignee": "Elena Rostova",
+      "deadline": "2026-11-01"
+    },
+    {
+      "id": "TSK-12",
+      "projectId": "PRJ-104",
+      "title": "Audit WCAG 2.1 AAA color contrast ratios across dark themes",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Elena Rostova",
+      "deadline": "2026-11-01"
+    },
+    {
+      "id": "TSK-13",
+      "projectId": "PRJ-104",
+      "title": "Publish accessible tab and modal web component specifications",
+      "status": "Pending",
+      "priority": "Medium",
+      "assignee": "Elena Rostova",
+      "deadline": "2026-11-01"
+    },
+    {
+      "id": "TSK-14",
+      "projectId": "PRJ-105",
+      "title": "Containerize Node.js build pipeline with multi-stage Dockerfiles",
+      "status": "Completed",
+      "priority": "Medium",
+      "assignee": "Maya Patel",
+      "deadline": "2026-10-25"
+    },
+    {
+      "id": "TSK-15",
+      "projectId": "PRJ-105",
+      "title": "Configure GitHub Actions runner with self-hosted cache",
+      "status": "Completed",
+      "priority": "Medium",
+      "assignee": "Maya Patel",
+      "deadline": "2026-10-25"
+    },
+    {
+      "id": "TSK-16",
+      "projectId": "PRJ-105",
+      "title": "Implement automated zero-downtime blue/green deployment triggers",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "Maya Patel",
+      "deadline": "2026-10-25"
+    },
+    {
+      "id": "TSK-17",
+      "projectId": "PRJ-106",
+      "title": "Benchmark Elasticsearch cluster shard allocation",
+      "status": "Completed",
+      "priority": "Low",
+      "assignee": "Liam Tanaka",
+      "deadline": "2026-11-15"
+    },
+    {
+      "id": "TSK-18",
+      "projectId": "PRJ-106",
+      "title": "Implement fuzzy query caching for top 1000 search terms",
+      "status": "In Progress",
+      "priority": "Low",
+      "assignee": "Liam Tanaka",
+      "deadline": "2026-11-15"
+    },
+    {
+      "id": "TSK-19",
+      "projectId": "PRJ-107",
+      "title": "Replace legacy tables with accessible semantic grid layout",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Sarah Jenkins",
+      "deadline": "2026-10-10"
+    },
+    {
+      "id": "TSK-20",
+      "projectId": "PRJ-107",
+      "title": "Integrate keyboard skip-links and ARIA live regions",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Sarah Jenkins",
+      "deadline": "2026-10-10"
+    },
+    {
+      "id": "TSK-21",
+      "projectId": "PRJ-107",
+      "title": "Optimize mobile viewport responsiveness down to 320px",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "Sarah Jenkins",
+      "deadline": "2026-10-10"
+    },
+    {
+      "id": "TSK-22",
+      "projectId": "PRJ-108",
+      "title": "Configure Prometheus metrics exporter for cluster nodes",
+      "status": "Completed",
+      "priority": "High",
+      "assignee": "Devon Miller",
+      "deadline": "2026-10-18"
+    },
+    {
+      "id": "TSK-23",
+      "projectId": "PRJ-108",
+      "title": "Diagnose WebSocket connection drops under heavy load",
+      "status": "In Progress",
+      "priority": "High",
+      "assignee": "Devon Miller",
+      "deadline": "2026-10-18"
+    },
+    {
+      "id": "TSK-24",
+      "projectId": "PRJ-110",
+      "title": "Generate automated monthly PDF invoice statements",
+      "status": "In Progress",
+      "priority": "Medium",
+      "assignee": "Jordan Chen",
+      "deadline": "2026-11-05"
+    }
+  ],
+  "activity": [
+    {
+      "id": "ACT-01",
+      "user": "Alex Rivera",
+      "action": "promoted Kubernetes cluster to v1.28 staging",
+      "target": "Cloud Infrastructure Migration",
+      "timestamp": "2026-09-26T10:52:00Z",
+      "type": "deploy",
+      "projectId": "PRJ-101",
+      "message": "promoted Kubernetes cluster to v1.28 staging"
+    },
+    {
+      "id": "ACT-02",
+      "user": "Maya Patel",
+      "action": "closed task TSK-15 (CI/CD self-hosted runner cache)",
+      "target": "DevOps Automated CI/CD Pipeline",
+      "timestamp": "2026-09-26T10:35:00Z",
+      "type": "task",
+      "projectId": "PRJ-105",
+      "message": "closed task TSK-15 (CI/CD self-hosted runner cache)"
+    },
+    {
+      "id": "ACT-03",
+      "user": "Jordan Chen",
+      "action": "flagged webhook retry latency as At Risk",
+      "target": "Payment Gateway API Integration",
+      "timestamp": "2026-09-26T10:14:00Z",
+      "type": "status",
+      "projectId": "PRJ-103",
+      "message": "flagged webhook retry latency as At Risk"
+    },
+    {
+      "id": "ACT-04",
+      "user": "Sarah Jenkins",
+      "action": "completed responsive test suite at 320px viewport",
+      "target": "Client Portal UX Redesign",
+      "timestamp": "2026-09-26T09:48:00Z",
+      "type": "test",
+      "projectId": "PRJ-107",
+      "message": "completed responsive test suite at 320px viewport"
+    },
+    {
+      "id": "ACT-05",
+      "user": "Elena Rostova",
+      "action": "merged design token v2.1 specifications",
+      "target": "Design System 2.0 Tokens",
+      "timestamp": "2026-09-26T09:12:00Z",
+      "type": "commit",
+      "projectId": "PRJ-104",
+      "message": "merged design token v2.1 specifications"
+    },
+    {
+      "id": "ACT-06",
+      "user": "Marcus Vance",
+      "action": "certified SOC2 Type II compliance audit pass",
+      "target": "Security Compliance Audit (SOC2)",
+      "timestamp": "2026-09-26T08:30:00Z",
+      "type": "milestone",
+      "projectId": "PRJ-102",
+      "message": "certified SOC2 Type II compliance audit pass"
+    },
+    {
+      "id": "ACT-07",
+      "user": "Devon Miller",
+      "action": "opened issue: WebSocket disconnects at 10k connections",
+      "target": "Real-time Telemetry Service",
+      "timestamp": "2026-09-26T08:05:00Z",
+      "type": "alert",
+      "projectId": "PRJ-108",
+      "message": "opened issue: WebSocket disconnects at 10k connections"
+    },
+    {
+      "id": "ACT-08",
+      "user": "Liam Tanaka",
+      "action": "reduced query cache lookup latency to 14ms",
+      "target": "Search & Indexing Engine Optimization",
+      "timestamp": "2026-09-26T07:40:00Z",
+      "type": "performance",
+      "projectId": "PRJ-106",
+      "message": "reduced query cache lookup latency to 14ms"
+    },
+    {
+      "id": "ACT-09",
+      "user": "Alex Rivera",
+      "action": "allocated 2 additional backend engineers",
+      "target": "Database Sharding & Replication",
+      "timestamp": "2026-09-25T18:20:00Z",
+      "type": "team",
+      "projectId": "PRJ-112",
+      "message": "allocated 2 additional backend engineers"
+    },
+    {
+      "id": "ACT-10",
+      "user": "Jordan Chen",
+      "action": "generated draft invoices for September billing cycle",
+      "target": "Billing & Invoice Automation",
+      "timestamp": "2026-09-25T16:45:00Z",
+      "type": "task",
+      "projectId": "PRJ-110",
+      "message": "generated draft invoices for September billing cycle"
+    },
+    {
+      "id": "ACT-11",
+      "user": "Sarah Jenkins",
+      "action": "verified keyboard focus trap on modal dialogs",
+      "target": "Client Portal UX Redesign",
+      "timestamp": "2026-09-25T15:10:00Z",
+      "type": "accessibility",
+      "projectId": "PRJ-107",
+      "message": "verified keyboard focus trap on modal dialogs"
+    },
+    {
+      "id": "ACT-12",
+      "user": "Elena Rostova",
+      "action": "archived completed documentation portal project",
+      "target": "Documentation Portal Refactor",
+      "timestamp": "2026-09-25T14:00:00Z",
+      "type": "milestone",
+      "projectId": "PRJ-111",
+      "message": "archived completed documentation portal project"
+    },
+    {
+      "id": "ACT-13",
+      "user": "Maya Patel",
+      "action": "configured multi-stage container optimization",
+      "target": "DevOps Automated CI/CD Pipeline",
+      "timestamp": "2026-09-25T11:25:00Z",
+      "type": "commit",
+      "projectId": "PRJ-105",
+      "message": "configured multi-stage container optimization"
+    },
+    {
+      "id": "ACT-14",
+      "user": "Marcus Vance",
+      "action": "conducted internal password entropy audit",
+      "target": "Security Compliance Audit (SOC2)",
+      "timestamp": "2026-09-25T10:00:00Z",
+      "type": "security",
+      "projectId": "PRJ-102",
+      "message": "conducted internal password entropy audit"
+    },
+    {
+      "id": "ACT-15",
+      "user": "Devon Miller",
+      "action": "deployed telemetry health check node",
+      "target": "Real-time Telemetry Service",
+      "timestamp": "2026-09-25T09:15:00Z",
+      "type": "deploy",
+      "projectId": "PRJ-108",
+      "message": "deployed telemetry health check node"
+    },
+    {
+      "id": "ACT-16",
+      "user": "Alex Rivera",
+      "action": "initialized project repository & architecture baseline",
+      "target": "NEXORA Workspace",
+      "timestamp": "2026-09-24T08:00:00Z",
+      "type": "system",
+      "projectId": "PRJ-101",
+      "message": "initialized project repository & architecture baseline"
+    }
+  ]
+}

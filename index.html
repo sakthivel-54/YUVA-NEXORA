@@ -28,14 +28,13 @@
       <!-- Desktop Navigation -->
       <nav class="nav-desktop" aria-label="Primary Navigation">
         <a href="#features" class="nav-link">Features</a>
-        <a href="#preview" class="nav-link">Workspace</a>
-        <a href="#stats" class="nav-link">Metrics</a>
+        <a href="dashboard.html" class="nav-link">Workspace</a>
         <a href="#about" class="nav-link">About</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <a href="dashboard.html" class="btn btn-primary" id="header-cta-btn">Launch Workspace</a>
+        <a href="dashboard.html" class="btn btn-primary" id="header-cta-btn">Open Workspace</a>
         <!-- Mobile Menu Toggle Button -->
         <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Toggle navigation menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -50,17 +49,16 @@
     <!-- Mobile Navigation Drawer -->
     <nav class="nav-mobile" id="nav-mobile-menu" aria-label="Mobile Navigation" hidden>
       <a href="#features" class="nav-link">Features</a>
-      <a href="#preview" class="nav-link">Workspace</a>
-      <a href="#stats" class="nav-link">Metrics</a>
+      <a href="dashboard.html" class="nav-link">Workspace</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="dashboard.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Open Dashboard</a>
+      <a href="dashboard.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Open Workspace</a>
     </nav>
   </header>
 
   <!-- Main Landmark -->
   <main id="main-content">
     <!-- Hero Section -->
-    <section class="hero-section" aria-labelledby="hero-heading">
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
       <div class="container">
         <div class="hero-grid">
           <!-- Hero Copy -->
@@ -70,16 +68,16 @@
               <span>Engineering Workspace</span>
             </div>
             <h1 id="hero-heading" class="hero-headline">
-              Manage Work.<br>
-              <span class="hero-headline-accent">Move Forward.</span>
+              A clearer workspace<br>
+              <span class="hero-headline-accent">for better work.</span>
             </h1>
             <p class="hero-subhead">
-              A smarter digital workspace for projects, teams, and everyday productivity. Built with uncompromising performance and zero third-party dependencies.
+              NEXORA brings projects, teams, tasks, and everyday productivity into one focused digital workspace with zero external frameworks.
             </p>
             <div class="hero-actions">
               <a href="dashboard.html" class="btn btn-primary" id="hero-primary-cta">Open Workspace</a>
               <a href="#features" class="link-arrow" id="hero-secondary-link">
-                <span>Explore Architecture</span>
+                <span>Explore Features</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
@@ -160,7 +158,29 @@
                   </div>
                 </article>
 
-                <!-- Preview Activity Snippet -->
+                <!-- 2. Task Summary Card -->
+                <div class="preview-item task-summary-card">
+                  <div class="task-summary-header">
+                    <span class="task-summary-title">Sprint 24 Task Summary</span>
+                    <span class="task-summary-total">24 Total</span>
+                  </div>
+                  <div class="task-summary-grid">
+                    <div class="task-stat-mini">
+                      <span class="task-stat-num" style="color: var(--status-active);">14</span>
+                      <span class="task-stat-lbl">Done</span>
+                    </div>
+                    <div class="task-stat-mini">
+                      <span class="task-stat-num" style="color: var(--color-accent);">7</span>
+                      <span class="task-stat-lbl">In Progress</span>
+                    </div>
+                    <div class="task-stat-mini">
+                      <span class="task-stat-num" style="color: var(--status-at-risk);">3</span>
+                      <span class="task-stat-lbl">Review</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3. Preview Activity Snippet -->
                 <div class="preview-item" style="border-style: dashed;">
                   <div class="activity-item" style="border: none; padding: 0;">
                     <span class="activity-dot" aria-hidden="true"></span>
@@ -169,6 +189,15 @@
                       <span class="activity-action">deployed Kubernetes cluster release 1.28</span>
                       <time class="activity-time" datetime="2026-09-26T10:45:00">12 minutes ago</time>
                     </div>
+                  </div>
+                </div>
+
+                <!-- 4. Team Status Bar -->
+                <div class="preview-item team-status-snippet">
+                  <span class="team-status-label">Active Squad Status:</span>
+                  <div class="team-status-pills">
+                    <span class="status-pill-mini status-pill-active"><span aria-hidden="true">●</span> 8 Online</span>
+                    <span class="status-pill-mini"><span aria-hidden="true">✓</span> 100% Gated</span>
                   </div>
                 </div>
               </div>
@@ -183,14 +212,14 @@
       <div class="container">
         <header class="section-header">
           <span class="section-tag">Core Architecture</span>
-          <h2 id="features-heading" class="section-title">Engineered for Focused Execution</h2>
+          <h2 id="features-heading" class="section-title">Everything you need to move faster</h2>
           <p class="section-description">
             Four targeted operational pillars designed to eliminate overhead, reduce cognitive friction, and keep software delivery on schedule.
           </p>
         </header>
 
         <div class="features-grid">
-          <!-- Feature 1 -->
+          <!-- Feature 1: Project Management -->
           <article class="feature-card">
             <div class="feature-icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -201,11 +230,11 @@
             </div>
             <h3 class="feature-title">Project Management</h3>
             <p class="feature-text">
-              Organize complex software initiatives into transparent milestones, track real-time delivery statuses, and maintain cross-team visibility without unnecessary bureaucracy.
+              Consolidate complex software initiatives into transparent milestones, track real-time delivery statuses, and maintain cross-team visibility in a single operational hub.
             </p>
           </article>
 
-          <!-- Feature 2 -->
+          <!-- Feature 2: Team Collaboration -->
           <article class="feature-card">
             <div class="feature-icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -221,21 +250,21 @@
             </p>
           </article>
 
-          <!-- Feature 3 -->
+          <!-- Feature 3: Task Tracking -->
           <article class="feature-card">
             <div class="feature-icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 11l3 3L22 4"></path>
+                <polyline points="9 11 12 14 22 4"></polyline>
                 <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
               </svg>
             </div>
             <h3 class="feature-title">Task Tracking</h3>
             <p class="feature-text">
-              Triage priorities, establish realistic delivery deadlines, and monitor granular completion states with high-contrast, accessible visual indicators.
+              Granular task breakdowns with automated priority triage, real-time status transitions, and accessible visual telemetry to keep deadlines transparent.
             </p>
           </article>
 
-          <!-- Feature 4 -->
+          <!-- Feature 4: Productivity Insights -->
           <article class="feature-card">
             <div class="feature-icon-box" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -246,7 +275,7 @@
             </div>
             <h3 class="feature-title">Productivity Insights</h3>
             <p class="feature-text">
-              Compute project velocity, status distributions, and team completion percentages dynamically using lightweight client-side data calculations.
+              Compute project velocity, status distributions, and team completion percentages dynamically using lightweight client-side calculations with zero lag.
             </p>
           </article>
         </div>
@@ -254,11 +283,12 @@
     </section>
 
     <!-- Product Preview & Interactive Tabs Section -->
-    <section class="section" id="preview" aria-labelledby="preview-heading">
+    <section class="section" id="solutions" aria-labelledby="solutions-heading">
+      <div id="preview" style="position: relative; top: -70px;"></div>
       <div class="container">
         <header class="section-header">
-          <span class="section-tag">Interactive Workspace Preview</span>
-          <h2 id="preview-heading" class="section-title">Built for Modern Engineering Speed</h2>
+          <span class="section-tag">Workspace Solutions</span>
+          <h2 id="solutions-heading" class="section-title">One workspace. Endless possibilities.</h2>
           <p class="section-description">
             Experience the workspace modules below. Use your mouse or keyboard (Arrow keys) to switch between operational tabs.
           </p>
@@ -269,19 +299,19 @@
           <div class="tab-list" role="tablist" aria-label="Workspace Modules">
             <button type="button" class="tab-btn" role="tab" id="tab-btn-overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-              <span>Overview</span>
+              <span>Project Progress</span>
             </button>
             <button type="button" class="tab-btn" role="tab" id="tab-btn-analytics" aria-controls="panel-analytics" aria-selected="false" tabindex="-1">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-              <span>Analytics</span>
+              <span>Task Summary</span>
             </button>
             <button type="button" class="tab-btn" role="tab" id="tab-btn-activity" aria-controls="panel-activity" aria-selected="false" tabindex="-1">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-              <span>Activity</span>
+              <span>Activity Stream</span>
             </button>
             <button type="button" class="tab-btn" role="tab" id="tab-btn-settings" aria-controls="panel-settings" aria-selected="false" tabindex="-1">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-              <span>Settings</span>
+              <span>Team Status &amp; Triggers</span>
             </button>
           </div>
 
@@ -501,14 +531,15 @@
       </div>
     </section>
 
-    <!-- FAQ Accordion Section (Week 2 Requirement) -->
-    <section class="section" id="faq" aria-labelledby="faq-heading">
+    <!-- About & FAQ Accordion Section -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div id="faq" style="position: relative; top: -70px;"></div>
       <div class="container">
         <header class="section-header">
-          <span class="section-tag">Frequently Asked Questions</span>
-          <h2 id="faq-heading" class="section-title">Architecture & System Questions</h2>
+          <span class="section-tag">Engineering Ethos &amp; FAQ</span>
+          <h2 id="about-heading" class="section-title">Architecture &amp; System Principles</h2>
           <p class="section-description">
-            Key architectural decisions, keyboard access rules, and vanilla frontend principles behind NEXORA.
+            Key architectural decisions, keyboard accessibility rules, and vanilla frontend principles behind NEXORA.
           </p>
         </header>
 
@@ -577,7 +608,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section" id="about" aria-labelledby="cta-heading">
+    <section class="section" id="cta-section" aria-labelledby="cta-heading">
       <div class="container">
         <div class="cta-box">
           <h2 id="cta-heading" class="cta-title">Ready to organize your workspace?</h2>
@@ -586,7 +617,58 @@
           </p>
           <div class="cta-actions">
             <a href="dashboard.html" class="btn btn-primary" id="cta-launch-dashboard">Launch Interactive Dashboard</a>
-            <button type="button" class="btn btn-secondary" data-modal-open>Preview Project Modal</button>
+            <a href="#contact" class="btn btn-secondary">Contact Engineering</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Connect With Our Engineering Team</h2>
+          <p class="section-description">
+            Have questions regarding NEXORA architecture, deployment options, or technical specifications? Reach out through our verified channels.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Technical Support</h3>
+            <p class="contact-card-desc">Direct inquiry channel for engineering squads and system deployment assistance.</p>
+            <a href="mailto:support@nexora.internal" class="contact-card-link">support@nexora.internal &rarr;</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Open Source Repository</h3>
+            <p class="contact-card-desc">Inspect wireframes, commit histories, and pure vanilla frontend modules.</p>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card-link">github.com/nexora-workspace &rarr;</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Professional Network</h3>
+            <p class="contact-card-desc">Connect with author B. Sakthivel on professional engineering platforms.</p>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card-link">linkedin.com/in/sakthivel &rarr;</a>
           </div>
         </div>
       </div>
@@ -675,33 +757,47 @@
           <span class="footer-badge">YuvaIntern Frontend Track</span>
         </div>
 
+        <!-- Column 1: Product -->
         <div>
-          <h3 class="footer-col-title">Navigation</h3>
+          <h3 class="footer-col-title">Product</h3>
           <ul class="footer-links">
             <li><a href="#features">Features</a></li>
-            <li><a href="#preview">Workspace</a></li>
-            <li><a href="#stats">Metrics</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="dashboard.html">Live Workspace</a></li>
+            <li><a href="#stats">Scale &amp; Metrics</a></li>
           </ul>
         </div>
 
+        <!-- Column 2: Resources -->
         <div>
-          <h3 class="footer-col-title">Workspace</h3>
+          <h3 class="footer-col-title">Resources</h3>
           <ul class="footer-links">
-            <li><a href="dashboard.html">Live Dashboard</a></li>
-            <li><a href="dashboard.html#projects">Projects Table</a></li>
-            <li><a href="dashboard.html#team">Team Roster</a></li>
-            <li><a href="dashboard.html#activity">Activity Feed</a></li>
+            <li><a href="#about">Architecture Ethos</a></li>
+            <li><a href="#solutions">Solutions Overview</a></li>
+            <li><a href="#stats">Scale &amp; Metrics</a></li>
+            <li><a href="https://github.com/sakthivel-54/YUVA-NEXORA" target="_blank" rel="noopener noreferrer">Source Repository</a></li>
           </ul>
         </div>
 
+        <!-- Column 3: Company -->
         <div>
-          <h3 class="footer-col-title">Engineering</h3>
+          <h3 class="footer-col-title">Company</h3>
           <ul class="footer-links">
-            <li><a href="#about">Wireframe Specs</a></li>
-            <li><a href="#about">Interactive Architecture</a></li>
-            <li><a href="#about">Accessibility Audit</a></li>
-            <li><a href="#about">Performance Audit</a></li>
+            <li><a href="#about">About NEXORA</a></li>
+            <li><a href="#features">Engineering Principles</a></li>
+            <li><a href="dashboard.html">Live Workspace</a></li>
+            <li><a href="#contact">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div>
+          <h3 class="footer-col-title">Contact</h3>
+          <ul class="footer-links">
+            <li><a href="#contact">Technical Support</a></li>
+            <li><a href="https://github.com/sakthivel-54/YUVA-NEXORA" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="#contact">Direct Inquiries</a></li>
           </ul>
         </div>
       </div>
