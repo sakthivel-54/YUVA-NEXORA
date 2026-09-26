@@ -16,13 +16,14 @@
 **NEXORA** is a modern, high-performance digital workspace platform tailored for engineering squads, systems architects, and project leads. Designed with an authentic developer/SaaS aesthetic, it delivers project organization, milestone triage, cross-functional team allocation, and productivity analytics with **zero external libraries or framework dependencies**.
 
 ### Visual Direction & Design Tokens
-- **Theme:** Developer/SaaS Aesthetic (`#111318`, `#F6F4EF`, `#3ECF8E`)
-- **Background:** `#111318` (Primary Deep Canvas)
-- **Surface Panels:** `#171A21` (Raised Surface Cards)
-- **Primary Text:** `#F6F4EF` (High-contrast Off-White)
-- **Accent:** `#3ECF8E` (Emerald Tech Green)
-- **Status Identifiers:** High-contrast tokens paired with non-color symbols (`● Active`, `✓ Completed`, `! At Risk`, `— On Hold`).
-- **Strict Aesthetic Rules:** Zero gradients, zero excessive glows, zero purple tones, zero glassmorphism, zero unnecessary decorative elements.
+- **Theme:** Modern Clean SaaS Aesthetic (`#F8FAFC`, `#0F172A`, `#2563EB`)
+- **Background:** `#F8FAFC` (Clean Slate-50 Canvas)
+- **Surface Panels:** `#FFFFFF` (Pure White Surface Cards with soft shadow layering)
+- **Primary Text:** `#0F172A` (Rich Deep Navy with >14:1 contrast ratio)
+- **Accent:** `#2563EB` (Vibrant Royal Blue)
+- **Borders:** `#E2E8F0` (Crisp Slate-200 Hairline Borders)
+- **Component Radii:** Smooth 6px–12px modern rounded SaaS styling
+- **Status Identifiers:** High-contrast semantic tokens paired with non-color symbols (`● Active`, `✓ Completed`, `! At Risk`, `— On Hold`).
 - **Typography:** Monospace technical fonts for badges, IDs, and metrics numerals; clean system sans-serif for optimal body readability.
 
 ---

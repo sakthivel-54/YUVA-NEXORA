@@ -9,38 +9,38 @@
    1. Design Tokens & CSS Custom Properties
    -------------------------------------------------------------------------- */
 :root {
-  /* Color Palette — Developer/SaaS Aesthetic */
-  --color-bg: #121316;
-  --color-surface: #181A20;
-  --color-surface-hover: #1F222B;
-  --color-surface-active: #252934;
-  --color-surface-elevated: #1B1E26;
+  /* Color Palette — Modern Clean Light Theme (SaaS Aesthetic) */
+  --color-bg: #F8FAFC;              /* Clean Slate-50 Background Canvas */
+  --color-surface: #FFFFFF;         /* Crisp Pure White Surface */
+  --color-surface-hover: #F1F5F9;   /* Slate-100 Hover */
+  --color-surface-active: #E2E8F0;  /* Slate-200 Active */
+  --color-surface-elevated: #F8FAFC;/* Slate-50 Header / Subpanel */
   
-  --color-border: #282C37;
-  --color-border-subtle: #1E222C;
-  --color-border-focus: #3ECF8E;
+  --color-border: #E2E8F0;          /* Clean Slate-200 Hairline Border */
+  --color-border-subtle: #F1F5F9;   /* Slate-100 Subtle Border */
+  --color-border-focus: #2563EB;    /* Vibrant Royal Blue Focus */
 
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
-  --color-text-inverse: #111318;
+  --color-text-primary: #0F172A;    /* Rich Deep Navy (Contrast ratio > 14:1) */
+  --color-text-secondary: #475569;  /* Crisp Slate-600 */
+  --color-text-muted: #64748B;      /* Slate-500 */
+  --color-text-inverse: #FFFFFF;
 
-  /* Accent Color (Emerald Green #3ECF8E) */
-  --color-accent: #3ECF8E;
-  --color-accent-hover: #34B27B;
-  --color-accent-active: #2C9767;
-  --color-accent-subtle: rgba(62, 207, 142, 0.12);
-  --color-accent-text: #0B2016; /* High-contrast text on accent button (>8:1) */
+  /* Accent Color (Vibrant Royal Blue #2563EB) */
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+  --color-accent-active: #1E40AF;
+  --color-accent-subtle: rgba(37, 99, 235, 0.08);
+  --color-accent-text: #FFFFFF;     /* Pure white high-contrast text on accent button */
 
-  /* Status Colors (Never used alone - paired with symbols & text) */
-  --status-active: #3ECF8E;
-  --status-active-bg: rgba(62, 207, 142, 0.12);
-  --status-completed: #38BDF8;
-  --status-completed-bg: rgba(56, 189, 248, 0.12);
-  --status-at-risk: #F87171;
-  --status-at-risk-bg: rgba(248, 113, 113, 0.12);
-  --status-on-hold: #F59E0B;
-  --status-on-hold-bg: rgba(245, 158, 11, 0.12);
+  /* Status Colors (Light Theme Semantic Badges) */
+  --status-active: #16A34A;
+  --status-active-bg: #DCFCE7;
+  --status-completed: #2563EB;
+  --status-completed-bg: #DBEAFE;
+  --status-at-risk: #DC2626;
+  --status-at-risk-bg: #FEE2E2;
+  --status-on-hold: #D97706;
+  --status-on-hold-bg: #FEF3C7;
 
   /* Typography */
   --font-mono: 'JetBrains Mono', 'Fira Code', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
@@ -56,35 +56,36 @@
   --text-3xl: 1.875rem;   /* 30px */
   --text-4xl: 2.25rem;    /* 36px */
   --text-5xl: 3rem;       /* 48px */
-  --text-hero: clamp(2.25rem, 5vw + 1rem, 4rem);
+  --text-hero: clamp(2rem, 4vw, 3rem);
 
-  /* Spacing */
-  --space-1: 0.1875rem;   /* 3px */     /* 4px */
-  --space-2: 0.375rem;    /* 6px */      /* 8px */
-  --space-3: 0.5rem;      /* 8px */     /* 12px */
-  --space-4: 0.75rem;     /* 12px */        /* 16px */
-  --space-5: 0.875rem;    /* 14px */     /* 20px */
-  --space-6: 1rem;        /* 16px */      /* 24px */
-  --space-8: 1.25rem;     /* 20px */        /* 32px */
-  --space-10: 1.5rem;     /* 24px */     /* 40px */
-  --space-12: 1.875rem;   /* 30px */       /* 48px */
-  --space-16: 2.25rem;    /* 36px */       /* 64px */
-  --space-20: 2.75rem;    /* 44px */       /* 80px */
-  --space-24: 3.25rem;    /* 52px */       /* 96px */
+  /* High-Density Engineering Spacing Scale */
+  --space-1: 0.1875rem;   /* 3px */
+  --space-2: 0.375rem;    /* 6px */
+  --space-3: 0.5rem;      /* 8px */
+  --space-4: 0.75rem;     /* 12px */
+  --space-5: 0.875rem;    /* 14px */
+  --space-6: 1rem;        /* 16px */
+  --space-8: 1.25rem;     /* 20px */
+  --space-10: 1.5rem;     /* 24px */
+  --space-12: 1.875rem;   /* 30px */
+  --space-16: 2.25rem;    /* 36px */
+  --space-20: 2.75rem;    /* 44px */
+  --space-24: 3.25rem;    /* 52px */
 
-  /* Layout */
-  --container-max: 1200px;
-  --header-height: 3.25rem; /* 52px */ /* 68px */
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --transition-fast: 150ms ease;
-  --transition-normal: 220ms ease;
+  /* Modern Rounded SaaS Layout Tokens */
+  --container-max: 1240px;
+  --header-height: 3.25rem; /* 52px */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Shadows - Minimal, strict, no glow */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.55);
+  /* Shadows — Modern Soft SaaS Layering */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
 }
 
 /* --------------------------------------------------------------------------
@@ -148,22 +149,22 @@ ul, ol {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-bg);
+  background: #F8FAFC;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border);
+  background: #CBD5E1;
   border-radius: var(--radius-sm);
-  border: 2px solid var(--color-bg);
+  border: 2px solid #F8FAFC;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
+  background: #94A3B8;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-border) var(--color-bg);
+  scrollbar-color: #CBD5E1 #F8FAFC;
 }
 
 /* --------------------------------------------------------------------------
@@ -560,7 +561,7 @@ ul, ol {
 .preview-card-wrapper {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
 }
@@ -717,6 +718,7 @@ ul, ol {
   display: flex;
   flex-direction: column;
   transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .feature-card:hover {
@@ -1356,6 +1358,7 @@ ul, ol {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .tab-list {
@@ -1419,6 +1422,7 @@ ul, ol {
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: border-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .accordion-item:hover {
@@ -1486,7 +1490,7 @@ ul, ol {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(17, 19, 24, 0.85);
+  background-color: rgba(15, 23, 42, 0.45); backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1708,7 +1712,7 @@ ul, ol {
 .spinner {
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(246, 244, 239, 0.2);
+  border: 2px solid rgba(15, 23, 42, 0.15);
   border-top-color: var(--color-accent);
   border-radius: 50%;
   animation: spin 0.6s linear infinite;
@@ -1735,6 +1739,7 @@ ul, ol {
   display: flex;
   flex-direction: column;
   transition: border-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
 .overview-card:hover {
@@ -1783,6 +1788,7 @@ ul, ol {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
 }
 
 .chart-card-header {
@@ -1954,6 +1960,7 @@ ul, ol {
   border-radius: 0 0 var(--radius-md) var(--radius-md);
   overflow-x: auto;
   margin-bottom: var(--space-8);
+  box-shadow: var(--shadow-sm);
 }
 
 .data-table {
@@ -2003,7 +2010,7 @@ ul, ol {
 }
 
 .data-table tr:hover td {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(15, 23, 42, 0.025);
 }
 
 .project-name-cell {
@@ -2096,6 +2103,7 @@ ul, ol {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  box-shadow: var(--shadow-sm);
 }
 
 .team-card-top {
