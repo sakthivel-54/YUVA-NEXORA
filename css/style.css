@@ -142,7 +142,7 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   3. Accessibility & Focus States
+   3. Accessibility & Focus States (Week 3 Enhancement)
    -------------------------------------------------------------------------- */
 /* High visibility focus indicator */
 :focus-visible {
@@ -150,25 +150,23 @@ ul, ol {
   outline-offset: 2px;
 }
 
-/* Skip to main content link */
-.skip-link {
-  position: absolute;
-  top: -999px;
-  left: 1rem;
-  z-index: 1000;
-  padding: var(--space-3) var(--space-5);
-  background-color: var(--color-accent);
-  color: var(--color-accent-text);
-  font-weight: 600;
-  font-size: var(--text-sm);
-  border-radius: var(--radius-sm);
-  transition: top var(--transition-fast);
+/* Remove default focus ring on mouse click if not navigating via keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Specific high-contrast focus rings for colored surfaces */
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
 }
 
 .skip-link:focus {
   top: 1rem;
   outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
 }
+
 
 /* Screen reader only utility */
 .sr-only {
