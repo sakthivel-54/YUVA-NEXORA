@@ -29,12 +29,13 @@
       <nav class="nav-desktop" aria-label="Primary Navigation">
         <a href="#features" class="nav-link">Features</a>
         <a href="#preview" class="nav-link">Workspace</a>
+        <a href="#stats" class="nav-link">Metrics</a>
         <a href="#about" class="nav-link">About</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <a href="#preview" class="btn btn-primary" id="header-cta-btn">Open Workspace</a>
+        <a href="dashboard.html" class="btn btn-primary" id="header-cta-btn">Launch Workspace</a>
         <!-- Mobile Menu Toggle Button -->
         <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Toggle navigation menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -50,8 +51,9 @@
     <nav class="nav-mobile" id="nav-mobile-menu" aria-label="Mobile Navigation" hidden>
       <a href="#features" class="nav-link">Features</a>
       <a href="#preview" class="nav-link">Workspace</a>
+      <a href="#stats" class="nav-link">Metrics</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="#preview" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Open Workspace</a>
+      <a href="dashboard.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Open Dashboard</a>
     </nav>
   </header>
 
@@ -68,16 +70,16 @@
               <span>Engineering Workspace</span>
             </div>
             <h1 id="hero-heading" class="hero-headline">
-              A clearer workspace<br>
-              <span class="hero-headline-accent">for better work.</span>
+              Manage Work.<br>
+              <span class="hero-headline-accent">Move Forward.</span>
             </h1>
             <p class="hero-subhead">
-              NEXORA brings projects, teams, tasks, and everyday productivity into one focused digital workspace with zero external frameworks.
+              A smarter digital workspace for projects, teams, and everyday productivity. Built with uncompromising performance and zero third-party dependencies.
             </p>
             <div class="hero-actions">
-              <a href="#preview" class="btn btn-primary" id="hero-primary-cta">Open Workspace</a>
+              <a href="dashboard.html" class="btn btn-primary" id="hero-primary-cta">Open Workspace</a>
               <a href="#features" class="link-arrow" id="hero-secondary-link">
-                <span>Explore Features</span>
+                <span>Explore Architecture</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
@@ -251,106 +253,211 @@
       </div>
     </section>
 
-    <!-- Product Preview Section -->
+    <!-- Product Preview & Interactive Tabs Section -->
     <section class="section" id="preview" aria-labelledby="preview-heading">
       <div class="container">
         <header class="section-header">
-          <span class="section-tag">Interface Preview</span>
+          <span class="section-tag">Interactive Workspace Preview</span>
           <h2 id="preview-heading" class="section-title">Built for Modern Engineering Speed</h2>
           <p class="section-description">
-            A real-time workspace that provides instant visibility into active projects, pending milestones, and live operational updates.
+            Experience the workspace modules below. Use your mouse or keyboard (Arrow keys) to switch between operational tabs.
           </p>
         </header>
 
-        <div class="preview-showcase">
-          <div class="showcase-toolbar">
-            <div class="showcase-toolbar-left">
-              <span class="showcase-toolbar-badge">Active Workspace</span>
-              <span>production-environment-us-east</span>
-            </div>
-            <div style="color: var(--color-accent); font-weight: 600;">
-              <span aria-hidden="true">●</span> System Nominal
+        <!-- W3C Accessible Tab Component -->
+        <div class="tab-container">
+          <div class="tab-list" role="tablist" aria-label="Workspace Modules">
+            <button type="button" class="tab-btn" role="tab" id="tab-btn-overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              <span>Overview</span>
+            </button>
+            <button type="button" class="tab-btn" role="tab" id="tab-btn-analytics" aria-controls="panel-analytics" aria-selected="false" tabindex="-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <span>Analytics</span>
+            </button>
+            <button type="button" class="tab-btn" role="tab" id="tab-btn-activity" aria-controls="panel-activity" aria-selected="false" tabindex="-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <span>Activity</span>
+            </button>
+            <button type="button" class="tab-btn" role="tab" id="tab-btn-settings" aria-controls="panel-settings" aria-selected="false" tabindex="-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <span>Settings</span>
+            </button>
+          </div>
+
+          <!-- Panel 1: Overview -->
+          <div class="tab-panel" role="tabpanel" id="panel-overview" aria-labelledby="tab-btn-overview">
+            <div class="showcase-main" style="padding: 0;">
+              <!-- Simulated Active Projects Table -->
+              <div class="showcase-panel">
+                <div class="showcase-panel-title">
+                  <span>Active Tracked Projects</span>
+                  <button type="button" class="btn btn-secondary" data-modal-open style="padding: 4px 10px; font-size: 12px; min-height: 32px;" aria-label="Open Project Quick View Dialog">
+                    Quick Inspect Modal
+                  </button>
+                </div>
+                <div style="overflow-x: auto;">
+                  <table class="mock-table" aria-label="Workspace Sample Projects">
+                    <thead>
+                      <tr>
+                        <th scope="col">Project</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Progress</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="font-weight: 600;">Cloud Infrastructure Migration</td>
+                        <td>Infrastructure</td>
+                        <td><span class="status-badge status-active"><span aria-hidden="true">●</span> Active</span></td>
+                        <td>82%</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: 600;">Security Compliance Audit</td>
+                        <td>Security</td>
+                        <td><span class="status-badge status-completed"><span aria-hidden="true">✓</span> Completed</span></td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: 600;">Payment Gateway Integration</td>
+                        <td>Backend</td>
+                        <td><span class="status-badge status-at-risk"><span aria-hidden="true">!</span> At Risk</span></td>
+                        <td>45%</td>
+                      </tr>
+                      <tr>
+                        <td style="font-weight: 600;">Design System 2.0 Tokens</td>
+                        <td>Design</td>
+                        <td><span class="status-badge status-on-hold"><span aria-hidden="true">—</span> On Hold</span></td>
+                        <td>65%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Overview Side Card -->
+              <div class="showcase-panel">
+                <div class="showcase-panel-title">
+                  <span>Sprint Health</span>
+                  <span style="color: var(--color-accent); font-weight: 600;">Optimal</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+                  <div>
+                    <div style="display: flex; justify-content: space-between; font-size: var(--text-xs); margin-bottom: 4px;">
+                      <span>Sprint Velocity</span>
+                      <span style="font-family: var(--font-mono);">91%</span>
+                    </div>
+                    <div class="preview-progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+                      <div class="preview-progress-fill" style="width: 91%;"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="display: flex; justify-content: space-between; font-size: var(--text-xs); margin-bottom: 4px;">
+                      <span>Code Review SLA</span>
+                      <span style="font-family: var(--font-mono); color: var(--color-accent);">1.8 hrs avg</span>
+                    </div>
+                    <div class="preview-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                      <div class="preview-progress-fill" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                  <div style="padding-top: var(--space-2); border-top: 1px solid var(--color-border-subtle);">
+                    <button type="button" class="btn btn-secondary" data-modal-open style="width: 100%; justify-content: center;">
+                      Preview Project Details
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="showcase-main">
-            <!-- Simulated Active Projects Table -->
-            <div class="showcase-panel">
-              <div class="showcase-panel-title">
-                <span>Active Tracked Projects</span>
-                <span>4 Active</span>
+          <!-- Panel 2: Analytics -->
+          <div class="tab-panel" role="tabpanel" id="panel-analytics" aria-labelledby="tab-btn-analytics" hidden>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-6);">
+              <div class="showcase-panel">
+                <div class="showcase-panel-title">
+                  <span>Throughput</span>
+                  <span style="font-family: var(--font-mono); color: var(--color-accent);">+18.4%</span>
+                </div>
+                <p style="font-size: var(--text-2xl); font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">42 Tasks / wk</p>
+                <p style="font-size: var(--text-xs); color: var(--color-text-secondary);">Calculated across 8 cross-functional squad members over 14 days.</p>
               </div>
-              <div style="overflow-x: auto;">
-                <table class="mock-table" aria-label="Workspace Sample Projects">
-                  <thead>
-                    <tr>
-                      <th scope="col">Project</th>
-                      <th scope="col">Category</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Progress</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style="font-weight: 600;">Cloud Infrastructure Migration</td>
-                      <td>Infrastructure</td>
-                      <td><span class="status-badge status-active"><span aria-hidden="true">●</span> Active</span></td>
-                      <td>82%</td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: 600;">Security Compliance Audit</td>
-                      <td>Security</td>
-                      <td><span class="status-badge status-completed"><span aria-hidden="true">✓</span> Completed</span></td>
-                      <td>100%</td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: 600;">Payment Gateway Integration</td>
-                      <td>Backend</td>
-                      <td><span class="status-badge status-at-risk"><span aria-hidden="true">!</span> At Risk</span></td>
-                      <td>45%</td>
-                    </tr>
-                    <tr>
-                      <td style="font-weight: 600;">Design System 2.0 Tokens</td>
-                      <td>Design</td>
-                      <td><span class="status-badge status-on-hold"><span aria-hidden="true">—</span> On Hold</span></td>
-                      <td>65%</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="showcase-panel">
+                <div class="showcase-panel-title">
+                  <span>Cycle Time</span>
+                  <span style="font-family: var(--font-mono); color: var(--color-accent);">-24%</span>
+                </div>
+                <p style="font-size: var(--text-2xl); font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">2.6 Days</p>
+                <p style="font-size: var(--text-xs); color: var(--color-text-secondary);">Average elapsed time from task creation to verified production merge.</p>
+              </div>
+              <div class="showcase-panel">
+                <div class="showcase-panel-title">
+                  <span>Deployment Frequency</span>
+                  <span style="font-family: var(--font-mono); color: var(--color-accent);">Stable</span>
+                </div>
+                <p style="font-size: var(--text-2xl); font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">4.2 / day</p>
+                <p style="font-size: var(--text-xs); color: var(--color-text-secondary);">Continuous deployment cadence with automated test gating.</p>
               </div>
             </div>
+          </div>
 
-            <!-- Simulated Real-time Activity Stream -->
-            <div class="showcase-panel">
-              <div class="showcase-panel-title">
-                <span>Recent Stream</span>
-                <span>Live Feed</span>
-              </div>
-              <div class="activity-feed-list" role="feed" aria-label="Recent Workspace Activity">
-                <article class="activity-item">
-                  <span class="activity-dot" aria-hidden="true"></span>
-                  <div class="activity-content">
-                    <span class="activity-user">Alex Rivera</span>
-                    <span class="activity-action">closed task #104 in Cloud Infra</span>
-                    <time class="activity-time" datetime="2026-09-26T11:05:00">5 mins ago</time>
-                  </div>
-                </article>
-                <article class="activity-item">
-                  <span class="activity-dot" aria-hidden="true"></span>
-                  <div class="activity-content">
-                    <span class="activity-user">Maya Patel</span>
-                    <span class="activity-action">promoted build to staging</span>
-                    <time class="activity-time" datetime="2026-09-26T10:48:00">22 mins ago</time>
-                  </div>
-                </article>
-                <article class="activity-item">
-                  <span class="activity-dot" aria-hidden="true"></span>
-                  <div class="activity-content">
-                    <span class="activity-user">Jordan Chen</span>
-                    <span class="activity-action">added 3 documentation tasks</span>
-                    <time class="activity-time" datetime="2026-09-26T09:30:00">1 hour ago</time>
-                  </div>
-                </article>
+          <!-- Panel 3: Activity -->
+          <div class="tab-panel" role="tabpanel" id="panel-activity" aria-labelledby="tab-btn-activity" hidden>
+            <div class="activity-feed-list" role="feed" aria-label="Tabbed Workspace Activity Feed">
+              <article class="activity-item">
+                <span class="activity-dot" aria-hidden="true"></span>
+                <div class="activity-content">
+                  <span class="activity-user">Alex Rivera</span>
+                  <span class="activity-action">closed task #104 in Cloud Infra Migration</span>
+                  <time class="activity-time" datetime="2026-09-26T11:05:00">5 mins ago</time>
+                </div>
+              </article>
+              <article class="activity-item">
+                <span class="activity-dot" aria-hidden="true"></span>
+                <div class="activity-content">
+                  <span class="activity-user">Maya Patel</span>
+                  <span class="activity-action">promoted build to staging cluster</span>
+                  <time class="activity-time" datetime="2026-09-26T10:48:00">22 mins ago</time>
+                </div>
+              </article>
+              <article class="activity-item">
+                <span class="activity-dot" aria-hidden="true"></span>
+                <div class="activity-content">
+                  <span class="activity-user">Jordan Chen</span>
+                  <span class="activity-action">updated milestone date for Payment Gateway Integration</span>
+                  <time class="activity-time" datetime="2026-09-26T09:30:00">1 hour ago</time>
+                </div>
+              </article>
+              <article class="activity-item">
+                <span class="activity-dot" aria-hidden="true"></span>
+                <div class="activity-content">
+                  <span class="activity-user">Elena Rostova</span>
+                  <span class="activity-action">published Design Tokens v2.1 to repository</span>
+                  <time class="activity-time" datetime="2026-09-26T08:15:00">3 hours ago</time>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Panel 4: Settings & Interactive Toast Triggers -->
+          <div class="tab-panel" role="tabpanel" id="panel-settings" aria-labelledby="tab-btn-settings" hidden>
+            <div style="max-width: 600px; display: flex; flex-direction: column; gap: var(--space-5);">
+              <div>
+                <h3 style="font-size: var(--text-base); font-weight: 600; margin-bottom: var(--space-2);">Notification & Workspace Test Triggers</h3>
+                <p style="font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-4);">
+                  Test the accessible toast notification engine. Toasts emit non-blocking screen reader announcements via live regions.
+                </p>
+                <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                  <button type="button" class="btn btn-secondary" data-toast-msg="Project created successfully" data-toast-type="success">
+                    Trigger Success Toast
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-toast-msg="Settings updated in local cache" data-toast-type="info">
+                    Trigger Info Toast
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-toast-msg="Workspace refreshed with latest telemetry" data-toast-type="warning">
+                    Trigger Warning Toast
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -394,6 +501,81 @@
       </div>
     </section>
 
+    <!-- FAQ Accordion Section (Week 2 Requirement) -->
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 id="faq-heading" class="section-title">Architecture & System Questions</h2>
+          <p class="section-description">
+            Key architectural decisions, keyboard access rules, and vanilla frontend principles behind NEXORA.
+          </p>
+        </header>
+
+        <div class="accordion-group" role="region" aria-label="Frequently Asked Questions Accordion">
+          <!-- Accordion 1 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
+                <span>What makes NEXORA different from traditional project management platforms?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-ans-1" class="accordion-content" role="region" aria-labelledby="faq-btn-1" hidden>
+              NEXORA is engineered strictly on pure HTML5, CSS3, and modern Vanilla JavaScript without external runtimes, heavy frameworks, or bloated bundle sizes. This yields near-zero first-input delay, instant client-side rendering, and complete control over accessibility semantics.
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2">
+                <span>How does the keyboard navigation and accessibility system work?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-ans-2" class="accordion-content" role="region" aria-labelledby="faq-btn-2" hidden>
+              Every interactive element adheres to W3C WAI-ARIA standards. Tabs support Arrow Left/Right, Home, and End navigation; modals trap focus and restore focus on Escape or close; accordion triggers reflect real-time <code>aria-expanded</code> states; and color is never used as the sole conveyor of information.
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3">
+                <span>Can I run NEXORA offline or via local HTTP servers?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-ans-3" class="accordion-content" role="region" aria-labelledby="faq-btn-3" hidden>
+              Yes. Because NEXORA uses standard client-side JSON data fetching, running through a local development server (such as VS Code Live Server, Python's <code>http.server</code>, or Node's <code>serve</code>) allows seamless offline operation with zero remote dependencies.
+            </div>
+          </div>
+
+          <!-- Accordion 4 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button type="button" class="accordion-trigger" id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4">
+                <span>How does the Git branch progression correspond to each internship week?</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div id="faq-ans-4" class="accordion-content" role="region" aria-labelledby="faq-btn-4" hidden>
+              The repository maintains five sequential branches: <code>week-1</code> (Responsive Landing Page), <code>week-2</code> (Interactive UI Components), <code>week-3</code> (Accessibility Enhancements), <code>week-4</code> (Performance Optimization), and <code>week-5</code> (Final Project Dashboard). The <code>main</code> branch represents the culmination of all five weeks.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="section" id="about" aria-labelledby="cta-heading">
       <div class="container">
@@ -404,12 +586,74 @@
           </p>
           <div class="cta-actions">
             <a href="dashboard.html" class="btn btn-primary" id="cta-launch-dashboard">Launch Interactive Dashboard</a>
-            <a href="#features" class="btn btn-secondary">Review Technical Specs</a>
+            <button type="button" class="btn btn-secondary" data-modal-open>Preview Project Modal</button>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Interactive Project Preview Modal (Week 2 Requirement) -->
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+    <div class="modal-container">
+      <header class="modal-header">
+        <h2 id="modal-project-title" class="modal-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-accent);"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <span>Cloud Infrastructure Migration</span>
+        </h2>
+        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">&times;</button>
+      </header>
+
+      <div class="modal-body">
+        <div style="display: flex; gap: var(--space-2); align-items: center;">
+          <span class="preview-badge preview-badge-high">High Priority</span>
+          <span class="status-badge status-active"><span aria-hidden="true">●</span> Active Sprint</span>
+          <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted);">ID: PRJ-101</span>
+        </div>
+
+        <p>
+          Migrating monolithic backend microservices to a managed Kubernetes cluster on US-East, improving horizontal scaling and resilience against peak traffic spikes.
+        </p>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: var(--text-xs); margin-bottom: 4px;">
+            <span style="font-weight: 600;">Milestone Completion</span>
+            <span style="font-family: var(--font-mono);">82% (14 of 17 Tasks Finished)</span>
+          </div>
+          <div class="preview-progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+            <div class="preview-progress-fill" style="width: 82%;"></div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); background-color: var(--color-bg); padding: var(--space-4); border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle); font-size: var(--text-xs);">
+          <div>
+            <span style="color: var(--color-text-muted); display: block;">Lead Architect:</span>
+            <span style="font-weight: 600; color: var(--color-text-primary);">Alex Rivera (Core Infra)</span>
+          </div>
+          <div>
+            <span style="color: var(--color-text-muted); display: block;">Target Delivery:</span>
+            <span style="font-family: var(--font-mono); color: var(--color-text-primary);">2026-10-15</span>
+          </div>
+          <div>
+            <span style="color: var(--color-text-muted); display: block;">Allocated Engineers:</span>
+            <span style="color: var(--color-text-primary);">4 Team Members</span>
+          </div>
+          <div>
+            <span style="color: var(--color-text-muted); display: block;">Deployment Phase:</span>
+            <span style="color: var(--color-accent); font-weight: 600;">Staging Validation</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-modal-close>Close</button>
+        <a href="dashboard.html" class="btn btn-primary">Open in Live Dashboard</a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Accessible Toast Live Region Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
   <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
@@ -437,7 +681,7 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#preview">Workspace</a></li>
             <li><a href="#stats">Metrics</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
 
@@ -468,5 +712,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- Application Logic (Deferred for optimal parsing) -->
+  <script src="js/app.js" defer></script>
 </body>
 </html>
